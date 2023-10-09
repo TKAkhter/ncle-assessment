@@ -1,0 +1,7 @@
+{
+  "name": "ncle-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
