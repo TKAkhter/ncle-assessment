@@ -1,20 +1,215 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="ion-padding">
     <ion-title>
-      Blank
+      <ion-img class="ml-5 mt-5 max-w-[63px] max-h-[27px]" src="assets/images/logo.svg" alt="Logo"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-content" [fullscreen]="true">
+  <div class="bg-subscribe p-20">
+    <ion-grid class="max-w-[1020px] border boder-[#BFB8D7] shadow-[0px_0px_52px_0px_rgba(185,169,205,0.20)] rounded-[24px] p-0" [fixed]="true">
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size="7" class="bg-white p-8 rounded-tl-[24px] rounded-bl-[24px]">
+          <ion-text>
+            <h3 class="text-lg font-bold text-black">Subscribe</h3>
+          </ion-text>
+          <ion-text>
+            <p class="text-base font-normal mb-5 text-black">to our Monthly Surprise Box</p>
+          </ion-text>
+          <div class="my-6 border-b border-[#F2F2F2]"></div>
+          <ion-text>
+            <p class="text-base-2 font-bold mb-3 text-black">Contact Information</p>
+          </ion-text>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+          <label for="name" class="block mb-2 text-sm-2 font-medium text-[#344054]">Your Name</label>
+          <input type="text" id="name"
+            class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50"
+            placeholder="e.g Osama Alshathri" required>
+
+          <label for="email" class="block mt-5 mb-2 text-sm-2 font-medium text-[#344054]">Email</label>
+          <input type="email" id="email"
+            class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50"
+            placeholder="Osama@gmail.com" required>
+
+          <ion-text>
+            <p class="text-base-2 font-bold mt-6 mb-3 text-black">Child’s Information</p>
+          </ion-text>
+
+          <label for="email" class="block mb-2 text-sm-2 font-medium text-[#344054]">Child’s Full Name</label>
+          <input type="email" id="email"
+            class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50"
+            placeholder="e.g Sarah Mohammad" required>
+
+          <label for="childDateOfBirthDate" class="block mt-5 mb-2 text-sm-2 font-medium text-[#344054]">Child’s Date of
+            Birth</label>
+          <div class="flex justify-between items-center gap-3">
+            <select id="childDateOfBirthDate"
+              class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50 invalid:text-[#667085] focus:outline-none"
+              required>
+              <option value="" disabled selected>Date</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select id="childDateOfBirthMonth"
+              class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50 invalid:text-[#667085] focus:outline-none"
+              required>
+              <option value="" disabled selected>Month</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select id="childDateOfBirthYear"
+              class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-[#667085] placeholder-opacity-50 invalid:text-[#667085] focus:outline-none"
+              required>
+              <option value="" disabled selected>Year</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+          </div>
+
+          <label for="childGrade" class="block mt-5 mb-2 text-sm-2 font-medium text-[#344054]">Grade</label>
+          <select id="childGrade"
+            class="border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-3.5 py-2.5 placeholder-opacity-50 my-2 invalid:text-[#667085] focus:outline-none"
+            required>
+            <option value="" disabled selected>e.g Grade 2</option>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Grade 10">Grade 10</option>
+          </select>
+
+          <label for="gender" class="block mt-5 mb-2 text-sm-2 font-medium text-[#344054]">Gender</label>
+          <div class="grid grid-cols-2 gap-2">
+            <input class="hidden" id="boy" name="gender" type="radio" />
+            <label
+              class="block w-full border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 relative"
+              for="boy">
+              <span class='icon'><i class="fas fa-check text-black rounded-full text-xs p-1 -m-2"></i></span>
+              Boy
+            </label>
+
+            <input class="hidden" id="girl" name="gender" type="radio" />
+            <label
+              class="block w-full border border-gray-300 text-black text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 relative"
+              for="girl">
+              <span class='icon'><i class="fas fa-check text-black rounded-full text-xs p-1 -m-2"></i></span>
+              Girl
+            </label>
+          </div>
+
+          <ion-text>
+            <p class="text-base-2 font-bold mt-6 mb-3 text-black">As a parent select any 3 topics</p>
+          </ion-text>
+
+          <ul class="w-full flex items-center flex-wrap gap-2">
+            <li>
+              <input type="checkbox" id="arabic" value="" class="hidden peer" required="">
+              <label for="arabic"
+                class="inline-flex items-center justify-between text-[#667085] bg-white border-2 border-[#E1E3E6] rounded-[48px] cursor-pointer peer-checked:border-[#6633FF] peer-checked:text-[#6633FF] peer-checked:bg-[#F4F1FE] px-5 py-1">
+                <ion-text>
+                  <p class="text-base font-normal">Arabic</p>
+                </ion-text>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="islamic" value="" class="hidden peer" required="">
+              <label for="islamic"
+                class="inline-flex items-center justify-between text-[#667085] bg-white border-2 border-[#E1E3E6] rounded-[48px] cursor-pointer peer-checked:border-[#6633FF] peer-checked:text-[#6633FF] peer-checked:bg-[#F4F1FE] px-5 py-1">
+                <ion-text>
+                  <p class="text-base font-normal">Islamic</p>
+                </ion-text>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="english" value="" class="hidden peer" required="">
+              <label for="english"
+                class="inline-flex items-center justify-between text-[#667085] bg-white border-2 border-[#E1E3E6] rounded-[48px] cursor-pointer peer-checked:border-[#6633FF] peer-checked:text-[#6633FF] peer-checked:bg-[#F4F1FE] px-5 py-1">
+                <ion-text>
+                  <p class="text-base font-normal">English</p>
+                </ion-text>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="history" value="" class="hidden peer" required="">
+              <label for="history"
+                class="inline-flex items-center justify-between text-[#667085] bg-white border-2 border-[#E1E3E6] rounded-[48px] cursor-pointer peer-checked:border-[#6633FF] peer-checked:text-[#6633FF] peer-checked:bg-[#F4F1FE] px-5 py-1">
+                <ion-text>
+                  <p class="text-base font-normal">History</p>
+                </ion-text>
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="sports" value="" class="hidden peer" required="">
+              <label for="sports"
+                class="inline-flex items-center justify-between text-[#667085] bg-white border-2 border-[#E1E3E6] rounded-[48px] cursor-pointer peer-checked:border-[#6633FF] peer-checked:text-[#6633FF] peer-checked:bg-[#F4F1FE] px-5 py-1">
+                <ion-text>
+                  <p class="text-base font-normal">Sports</p>
+                </ion-text>
+              </label>
+            </li>
+          </ul>
+            <ion-button shape="round" color="light" href="/home" class="text-md font-black p-4 mt-20 w-full">Continue to payment</ion-button>
+        </ion-col>
+        <ion-col size="5" class="bg-[#F1EDFE] p-8 rounded-tr-[24px] rounded-br-[24px] h-full">
+          <ion-img class="my-5" src="assets/images/placeholder-image.png" alt="Placeholder Image"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

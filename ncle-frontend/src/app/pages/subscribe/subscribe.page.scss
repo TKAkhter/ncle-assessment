@@ -1,27 +1,41 @@
-#container {
-  text-align: center;
+.bg-subscribe {
+  --background: none;
+  background-image: url("../../../assets/images/bg-subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff9e6;
+}
 
+ion-button {
+  --ion-color-light-contrast: #896af9;
+  --padding-top: 16px;
+  --padding-start: 28px;
+  --padding-end: 28px;
+  --padding-bottom: 16px;
+  --border-radius: 16px;
+  --box-shadow: 4px 4px 0px -1px #896af9;
+  --border: 1px solid #896af9;
+  padding: 0;
+  border: 1px solid #896af9;
+  border-radius: 16px;
+  text-transform: capitalize;
+}
+
+input[type="radio"]:checked + label {
+  border: 1px solid var(--ion-color-success);
+}
+
+input[type="radio"]:checked + label .fa-check {
+  background-color: var(--ion-color-success);
+}
+
+.fa-check {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../assets/images/circle-check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  top: 18px;
+  right: 20px;
 }
