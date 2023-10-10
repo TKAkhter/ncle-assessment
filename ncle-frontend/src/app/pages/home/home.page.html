@@ -1,15 +1,118 @@
 <ion-header [translucent]="true">
-  <ion-toolbar class="ion-no-border shadow-none">
+  <ion-toolbar class="ion-padding">
     <ion-title>
-      Logo
+      <ion-img class="m-5 max-w-[63px] max-h-[27px]" src="assets/images/logo.svg" alt="Logo"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-content" [fullscreen]="true">
+  <ion-grid class="max-w-[1220px]" [fixed]="true">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col>
+        <div class="flex justify-center mx-auto max-w-[768px] flex-col text-center">
+          <ion-text>
+            <h1 class="text-4xl font-black mb-5">Discover the magic of our surprise box</h1>
+          </ion-text>
+          <ion-text>
+            <h3 class="text-lg font-bold">Unleash your child's curiosity with our educational subscription box filled
+              with fun and learning.</h3>
+          </ion-text>
+          <div class="mx-auto">
+            <ion-button shape="round" color="light" class="text-md font-black p-4 mb-5">Subscribe Now</ion-button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col>
+        <ion-img class="my-5" src="assets/images/placeholder-image.png" alt="Placeholder Image"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="bg-discover py-24">
+    <div class="w-full flex justify-center mx-auto max-w-[768px] flex-col text-center">
+      <ion-text>
+        <p class="text-base font-semibold text-black">Discover</p>
+      </ion-text>
+      <ion-text>
+        <h2 class="text-3xl font-bold text-black my-5">How It Works: Subscribe and Receive Your Surprise Box</h2>
+      </ion-text>
+      <p class="text-lg font-normal text-black">Subscribe to our surprise subscription box and give your child the
+        gift of learning. Each month, we curate
+        a box filled with educational materials tailored to your child's age and interests.</p>
+    </div>
+    <ion-grid class="w-full max-w-[1220px] mt-10" [fixed]="true">
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size="12" size-lg="4">
+          <ion-img class="my-5 w-[96px] h-[96px] mx-auto" src="assets/images/subscribe.svg" alt="Subscribe"></ion-img>
+          <ion-text>
+            <p class="text-black font-bold text-lg text-center my-5">
+              Step 1:<br>Subscribe
+            </p>
+          </ion-text>
+          <ion-text>
+            <p class="text-black font-normal text-base text-center">
+              Select a subscription plan that suits your child's learning needs and preferences.
+            </p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="12" size-lg="4">
+          <ion-img class="my-5 w-[96px] h-[96px] mx-auto" src="assets/images/customize.svg" alt="Customize"></ion-img>
+          <ion-text>
+            <p class="text-black font-bold text-lg text-center my-5">
+              Step 2:<br>Subscribe
+            </p>
+          </ion-text>
+          <ion-text>
+            <p class="text-black font-normal text-base text-center">
+              Tell us about your child's age, interests, and learning goals, and we'll customize their surprise box
+              accordingly.
+            </p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="12" size-lg="4">
+          <ion-img class="my-5 w-[96px] h-[96px] mx-auto" src="assets/images/surprise.svg" alt="Surprise"></ion-img>
+          <ion-text>
+            <p class="text-black font-bold text-lg text-center my-5">
+              Step 3:<br>Receive Your Surprise Box
+            </p>
+          </ion-text>
+          <ion-text>
+            <p class="text-black font-normal text-base text-center">
+              Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with
+              engaging learning materials.
+            </p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="flex justify-center items-center my-5">
+      <ion-button shape="round" color="light" class="text-md font-black p-4 mb-5">Subscribe
+        Now</ion-button>
+    </div>
   </div>
+
+  <div class="bg-white pb-12">
+    <ion-grid class="max-w-[1220px]" [fixed]="true">
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col>
+          <div class="pt-16 mb-8 border-b border-black"></div>
+          <div class="flex">
+            <div class="flex-2 flex flex-row gap-5">
+                <ion-text><p class="text-sm text-black font-normal underline">Privacy Policy</p></ion-text>
+                <ion-text><p class="text-sm text-black font-normal underline">Terms of Service</p></ion-text>
+                <ion-text><p class="text-sm text-black font-normal underline">Cookies Settings</p></ion-text>
+            </div>
+            <div class="flex-1 flex justify-end">
+              <ion-text><p class="text-sm text-black font-normal">© 2023 MyEdu. All rights reserved.</p></ion-text>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
