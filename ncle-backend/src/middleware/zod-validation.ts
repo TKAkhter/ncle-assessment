@@ -5,7 +5,6 @@ export const zodValidation = (zSchema: ZodTypeAny, requestSection: "body" | "par
 	return async (req: Request, res: Response, next: NextFunction): Promise<void | Response> => {
 		try {
 			const data = zSchema.parse(req[requestSection]);
-			console.log("🚀 ~ file: zod-validation.ts:8 ~ return ~ data:", data);
 			if (data) {
 				req[requestSection] = data;
 				next();

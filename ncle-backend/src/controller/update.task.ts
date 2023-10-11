@@ -13,10 +13,12 @@ export default function updateTask(req: Request, res: Response) {
                 ...data[taskIndex],
                 ...req.body,
             };
+        } else {
+            return res.status(404).json({ message: 'Task not found' });
         }
-        
+
         writeData(data);
-        
+
         return res.status(200).json({ message: 'Task updated successfully', data: data[taskIndex] });
     } catch (error) {
         console.log(error);

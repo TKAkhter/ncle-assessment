@@ -7,7 +7,10 @@ export default function getTask(req: Request, res: Response) {
         const { id } = req.params;
         const data = readData();
         const task = data.find((task:TaskType) => task.id === id);
-        return res.status(200).json(task);
+        if(task) {
+            return res.status(200).json(task);
+        }
+        return res.status(404).json({message: 'No Task Found'});
     } catch (error) {
         console.log(error);
     }
