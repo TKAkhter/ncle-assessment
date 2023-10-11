@@ -43,6 +43,9 @@ Keep all TypeScript source files in the `src` folder.
 
 * Due to resticted time many of future features can not be added
 * Instead of any database, a dummy data json file is being used. can be replace with any database by changing it in read-write.ts file
+* I am currently working with my company and task was assigned in week days so I didn't get the chance to show my true potential
+* Due to resticted time many of future features can not be added
+* It's a small request but try to keep assessments or evalaution tests small. To ensure efficiency, please consider a more concise coding challenge, typically completed in 2 hours or more, that still assesses my skills effectively. I'm happy to demonstrate my abilities via project assessment or live call assessment while respecting both our time constraints.
 
 ## Extra Features
 * Some of the extra features include:
