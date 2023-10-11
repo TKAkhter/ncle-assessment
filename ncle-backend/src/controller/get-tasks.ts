@@ -4,18 +4,35 @@ import { TaskType } from "../types/task";
 
 export default function getTasks(req: Request, res: Response) {
     try {
-        const { assignedTo, category } = req.query;
-        const data = readData();
+        const { assignedTo, category, page: pageNumber, itemsPerPage } = req.query;
+
+        const page = pageNumber ? parseInt(pageNumber as string) : 1;
+        const limit = itemsPerPage ? parseInt(itemsPerPage as string) : 5;
+
+        const startIndex = (page - 1) * limit;
+        const endIndex = page * limit;
+
+        const allTasks = readData();
+
+        let tasks;
         if (assignedTo) {
-            const tasks = data.filter((task:TaskType) => task.assign_to === assignedTo);
-            return res.status(200).json(tasks);
+            tasks = allTasks.filter((task: TaskType) => task.assign_to === assignedTo);
+        } else if (category) {
+            tasks = allTasks.filter((task: TaskType) => task.category === category);
+        } else {
+            tasks = allTasks;
         }
-        if (category) {
-            const tasks = data.filter((task:TaskType) => task.category === category);
-            return res.status(200).json(tasks);
-        }
-        
-        return res.status(200).json(data);
+
+        const tasksForPage = tasks.slice(startIndex, endIndex);
+
+        return res.status(200).json({
+            currentPage: page,
+            itemsPerPage,
+            totalItems: tasks.length,
+            totalPages: Math.ceil(tasks.length / limit),
+            tasks: tasksForPage,
+        });
+
     } catch (error) {
         console.log(error);
     }
